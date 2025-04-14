@@ -1,6 +1,5 @@
-
 // User roles
-export type Role = 'admin' | 'user';
+export type Role = "admin" | "user";
 
 // User with password (for database)
 export interface User {
@@ -12,7 +11,7 @@ export interface User {
 }
 
 // User without password (for client-side and JWT payload)
-export type SafeUser = Omit<User, 'password'>;
+export type SafeUser = Omit<User, "password">;
 
 // Login request payload
 export interface LoginRequest {
